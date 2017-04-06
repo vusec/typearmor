@@ -57,14 +57,17 @@ Each `binfo.*` file contains different sections:
 
 * *[varargs]*
   Variadic functions:
+
     ```<address> = <min consumed argccount> (<function symbol>)```
 
 * *[args]*
   Regular (non-variadic) functions:
+
     ```<address> = <min consumed argcount> (<function symbol>)```
 
 * *[icall-args]*
   Indirect callsites:
+
     ```<address> = <max prepared argcount> (<function symbol>.<callsite index in function>)```
 
 * *[plts]*
