@@ -78,12 +78,13 @@ Each `binfo.*` file contains different sections:
 
 * *[non-voids]*
   Functions that seem to be of type non-void (i.e., they write RAX):
-    ```address = function_symbol```
+
+    ```<address> = <function symbol>```
 
 * *[prof-goals]*
   Indirect calls that could benefit from a profiling sessions:
   
-    call_address = function_symbol.index -> address of function from which we could not backtrack = target_function_symbol.
+    ```<call address> = <function symbol>.<index> -> <address of function from which we could not backtrack> = <target_function_symbol>.
 
 * *[unused]*
   Function is never used.
