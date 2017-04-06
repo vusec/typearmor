@@ -58,7 +58,7 @@ Each `binfo.*` file contains different sections:
 * *[varargs]*
   Variadic functions:
     
-    address = min_consumed_argccount (function_symbol)
+    ```<address> = <min consumed argccount> (<function symbol>)```
 
 * *[args]*
   Regular (non-variadic) functions:
