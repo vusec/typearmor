@@ -57,18 +57,15 @@ Each `binfo.*` file contains different sections:
 
 * *[varargs]*
   Variadic functions:
-    
     ```<address> = <min consumed argccount> (<function symbol>)```
 
 * *[args]*
   Regular (non-variadic) functions:
-
-    address = min_consumed_argcount (function_symbol)
+    ```<address> = <min consumed argcount> (<function symbol>)```
 
 * *[icall-args]*
   Indirect callsites:
-  
-    address = max_prepared_argcount (function_symbol.<callsite_index_in_function)
+    ```<address> = <max prepared argcount> (<function symbol>.<callsite index in function>)```
 
 * *[plts]*
   PLT entries.
@@ -78,8 +75,7 @@ Each `binfo.*` file contains different sections:
 
 * *[non-voids]*
   Functions that seem to be of type non-void (i.e., they write RAX):
-  
-    address = function_symbol
+    ```address = function_symbol```
 
 * *[prof-goals]*
   Indirect calls that could benefit from a profiling sessions:
