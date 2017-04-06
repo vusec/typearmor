@@ -1,7 +1,7 @@
 # TypeArmor
 This software is the open-source component of our paper "A Tough call: Mitigating Advanced Code-Reuse Attacks At The Binary Level", published in IEEE Security & Privacy (S&P) 2016. It currently only includes the static analysis of our work, allowing you to retrieve argument count information for callees and callsites of compiled C/C++ applications.  
 
-This code is released under the [Apache 2.0 license](https://github.com/vusec/typearmor/blobl/master/LICENSE-2.0.txt).
+This code is released under the [Apache 2.0 license](https://github.com/vusec/typearmor/blob/master/LICENSE-2.0.txt).
 
 # Disclaimer
 If, for some weird reason, you think running this code broke your device, you get to keep both pieces.
