@@ -84,7 +84,7 @@ Each `binfo.*` file contains different sections:
 * *[prof-goals]*
   Indirect calls that could benefit from a profiling sessions:
   
-    ```<call address> = <function symbol>.<index> -> <address of function from which we could not backtrack> = <target_function_symbol>.
+    ```<call address> = <function symbol>.<index> -> <address of function from which we could not backtrack> = <target_function_symbol>```
 
 * *[unused]*
   Function is never used.
