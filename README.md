@@ -56,19 +56,19 @@ This will generate new binary info file(s) in `../out/binfo.*`. Log output will 
 Each `binfo.*` file contains different sections:
 
 * *[varargs]*
-  Variadic functions. Listed in the format:
+  Variadic functions:
     
-    <address> = <minimum argccount> [<function symbol>).
+    address = min_consumed_argccount (function_symbol)
 
 * *[args]*
-  Regular (non-variadic) functions. Listed in the format 
-  
-    <address> = <minimum argcount> (<function symbol>).
+  Regular (non-variadic) functions:
+
+    address = min_consumed_argcount (function_symbol)
 
 * *[icall-args]*
-  Indirect callsites. Listed in the format 
+  Indirect callsites:
   
-    <address> = <max prepared argcount> (<function symbol>.<callsite index in function>)
+    address = max_prepared_argcount (function_symbol.<callsite_index_in_function)
 
 * *[plts]*
   PLT entries.
@@ -77,14 +77,14 @@ Each `binfo.*` file contains different sections:
   Disassembly errors.
 
 * *[non-voids]*
-  Functions that seem to be of type non-void (i.e., they write RAX). Listed in the format 
+  Functions that seem to be of type non-void (i.e., they write RAX):
   
-    <address> = <function symbol>.
+    address = function_symbol
 
 * *[prof-goals]*
-  Indirect calls that could benefit from a profiling sessions. Listed in the format 
+  Indirect calls that could benefit from a profiling sessions:
   
-    <icall address> = <function symbol.index> -> <address of function from which we could not backtrack> = <target function symbol>.
+    call_address = function_symbol.index -> address of function from which we could not backtrack = target_function_symbol.
 
 * *[unused]*
   Function is never used.
